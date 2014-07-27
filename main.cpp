@@ -1,9 +1,14 @@
-#include <iostream>
+#include <wx/wx.h>
 
-int main()
+class App : public wxApp
 {
-  int i = 10;
-  std::cout << "hello world" << std::endl;
-  
-  return 0;
-}
+public:
+	bool OnInit()
+	{
+		wxLocale locale(wxLANGUAGE_DEFAULT);
+
+		return true;
+	}
+};
+
+wxIMPLEMENT_APP(App);
