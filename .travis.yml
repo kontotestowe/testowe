@@ -7,6 +7,7 @@ compiler:
 before_install:
   - autoreconf --install --force
   - sudo apt-add-repository 'deb http://repos.codelite.org/wx3.0.1/ubuntu/ precise universe'
+  - sudo apt-key adv --fetch-keys http://repos.codelite.org/CodeLite.asc
   - sudo apt-get update -q
   - sudo apt-get install wx3.0-headers
 
