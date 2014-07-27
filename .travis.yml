@@ -9,6 +9,7 @@ before_install:
   - sudo apt-key adv --fetch-keys http://repos.codelite.org/CodeLite.asc
   - sudo apt-get update -q
   - sudo apt-get install libwxbase3.0-0-unofficial libwxbase3.0-dev libwxgtk3.0-0-unofficial libwxgtk3.0-dev wx3.0-headers wx-common
+  - wx-config --cxxflags
 
 #install:
 #  - sudo apt-get install libgtkmm-3.0-dev
