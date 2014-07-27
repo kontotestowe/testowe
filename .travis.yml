@@ -6,6 +6,9 @@ compiler:
 
 before_install:
   - autoreconf --install --force
+  - sudo apt-add-repository 'deb http://repos.codelite.org/wx3.0.1/ubuntu/ precise universe'
+  - sudo apt-get update -q
+  - sudo apt-get install wx3.0-headers
 
 install:
   - sudo apt-get install libgtkmm-3.0-dev
