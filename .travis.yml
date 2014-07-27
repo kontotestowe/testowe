@@ -9,7 +9,7 @@ before_install:
   - sudo apt-add-repository 'deb http://repos.codelite.org/wx3.0.1/ubuntu/ precise universe'
   - sudo apt-key adv --fetch-keys http://repos.codelite.org/CodeLite.asc
   - sudo apt-get update -q
-  - sudo apt-get install wx3.0-headers
+  - sudo apt-get install libwxbase3.0-0-unofficial libwxbase3.0-dev libwxgtk3.0-0-unofficial libwxgtk3.0-dev wx3.0-headers wx-common
 
 install:
   - sudo apt-get install libgtkmm-3.0-dev
