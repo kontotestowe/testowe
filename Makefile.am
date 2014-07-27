@@ -1,4 +1,4 @@
-CPPFLAGS = -Wall -std=c++11 `wx-config --cxxflags`
+CPPFLAGS = -Wall -std=c++0x `wx-config --cxxflags`
 LDFLAGS = `wx-config --libs core,net,base` -lcurl
 
 bin_PROGRAMS = testowe
