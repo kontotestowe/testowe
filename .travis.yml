@@ -1,7 +1,6 @@
 language: cpp
 
 compiler:
-  - clang
   - gcc
 
 before_install:
@@ -11,7 +10,7 @@ before_install:
   - sudo apt-get update -q
   - sudo apt-get install libwxbase3.0-0-unofficial libwxbase3.0-dev libwxgtk3.0-0-unofficial libwxgtk3.0-dev wx3.0-headers wx-common
 
-install:
-  - sudo apt-get install libgtkmm-3.0-dev
+#install:
+#  - sudo apt-get install libgtkmm-3.0-dev
 
 script: ./configure && make
